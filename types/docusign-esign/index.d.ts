@@ -1645,7 +1645,7 @@ export class TemplatesApi {
         callback?: () => void,
     ): Promise<Tabs>;
 
-    get(accountId: string, templateId: string, optsOrCallback?: any, callback?: () => void): Promise<EnvelopeTemplate>;
+    get(accountId: string, templateId: string, optsOrCallback?: any, callback?: (err: any, res: any, response: any) => void): Promise<EnvelopeTemplate>;
 
     getDocument(
         accountId: string,
